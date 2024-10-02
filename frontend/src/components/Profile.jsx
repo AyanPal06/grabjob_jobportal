@@ -53,7 +53,7 @@ const Profile = () => {
         </div>
         <div className="my-5">
           <h1 className="font-semibold my-2">Skills</h1>
-          <div className="grid grid-cols-3 items-center gap-2 my-2">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 place-items-center gap-2 my-2  ">
             {user?.profile?.skills.length !== 0 ? (
               user?.profile?.skills.map((item, index) => <Badge key={index}>{item}</Badge>)
             ) : (
