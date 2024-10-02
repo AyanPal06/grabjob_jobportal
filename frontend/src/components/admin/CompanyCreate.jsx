@@ -9,7 +9,6 @@ import { COMPANY_API_END_POINT } from "@/utils/constant";
 import { useDispatch } from "react-redux";
 import { setSingleCompany } from "@/redux/companySlice";
 import { toast } from "sonner";
-import Footer from "../shared/Footer";
 
 const CompanyCreate = () => {
   const navigate = useNavigate();

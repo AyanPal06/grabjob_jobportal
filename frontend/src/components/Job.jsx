@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Circle, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { useNavigate } from "react-router-dom";
