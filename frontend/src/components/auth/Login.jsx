@@ -49,11 +49,11 @@ const Login = () => {
     }
   };
 
-  useEffect(()=>{
-    if(user){
-      navigate("/")
-    }
-  },[])
+  useEffect(() => {
+  if (user?.role) {
+    navigate("/");
+  }
+}, [user]);
   return (
     <div>
       <Navbar />
