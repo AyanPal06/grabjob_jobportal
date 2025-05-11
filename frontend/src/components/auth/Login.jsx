@@ -92,7 +92,7 @@ const Login = () => {
                   type="radio"
                   name="role"
                   value="student"
-                  checked={input.role === "student"}
+                  checked={input?.role === "student"}
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />
@@ -103,7 +103,7 @@ const Login = () => {
                   type="radio"
                   name="role"
                   value="recruter"
-                  checked={input.role === "recruter"}
+                  checked={input?.role === "recruter"}
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />

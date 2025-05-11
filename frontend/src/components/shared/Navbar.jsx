@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex items-center gap-12">
           <ul className="flex font-medium items-center gap-5">
-            {user && user.role === "recruter" ? (
+            {user && user?.role === "recruter" ? (
               <>
                 <li>
                   <Link to="/admin/companies">Companies</Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
                     </div>
                   </div>
                   <div className="flex flex-col text-grey-600 my-2">
-                    {user && user.role === "student" && (
+                    {user && user?.role === "student" && (
                       <div className="flex w-fit items-center gap-2 cursor-pointer">
                         <User2 />
                         <Button variant="link">
@@ -131,7 +131,7 @@ const Navbar = () => {
           {isMobileMenuOpen && (
             <div className="absolute top-16 right-2 bg-white border shadow-lg rounded-lg">
               <ul className="flex flex-col font-medium gap-4 p-4">
-                {user && user.role === "recruter" ? (
+                {user && user?.role === "recruter" ? (
                   <>
                     <li>
                       <Link to="/admin/companies">Companies</Link>
@@ -170,7 +170,7 @@ const Navbar = () => {
                   </>
                 ) : (
                   <>
-                    {user && user.role === "student" && (
+                    {user && user?.role === "student" && (
                       <li>
                         <Link to="/profile">View Profile</Link>
                       </li>

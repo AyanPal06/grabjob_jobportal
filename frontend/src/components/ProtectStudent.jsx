@@ -8,7 +8,7 @@ const ProtectStudent=({children})=>{
     const navigate = useNavigate();
 
     useEffect(()=>{
-        if(user===null  || user.role!== 'student'){
+        if(user===null  || user?.role!== 'student'){
             navigate("/");
         }
     },[]);
